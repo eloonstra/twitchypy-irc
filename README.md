@@ -42,7 +42,7 @@ To use this library, create a `Twitch` instance and call its methods to connect 
 messages.
 
 ```python
-from twitch_irc import Twitch
+from twitch import Twitch
 
 client = Twitch(user="your_username", token="your_oauth_token")
 client.connect()

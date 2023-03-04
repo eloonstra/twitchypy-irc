@@ -1,10 +1,10 @@
 [tool.poetry]
 name = "twitchypy_irc"
-version = "0.1.0"
+version = "0.1.1"
 description = "Allows you to connect to Twitch IRC and send and receive messages."
 authors = ["Elena Loonstra <eloonstra@pm.me>"]
 readme = "README.md"
-packages = [{ include = "src/twitchypy_irc" }]
+packages = [{ include = "twitch" }]
 
 [tool.poetry.dependencies]
 python = "^3.8"
