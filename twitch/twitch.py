@@ -188,12 +188,10 @@ class Twitch:
         """
         for recv in self.__recv():
             if recv.startswith("PING"):
-                print("ping")
                 self.__pong()
             elif "PRIVMSG" in recv:
                 self.__queue.put_nowait(TwitchPrivateMessage.parse(recv))
             elif "RECONNECT" in recv:
-                print("reconnecting...")
                 self.__is_reconnecting = True
                 self.disconnect()
                 self.connect()
